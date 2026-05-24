@@ -1,91 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Productos populares de Aloka</title>
-  <style>
-    body{
-      font-family: Arial, sans-serif;
-      background:#f5f5f5;
-      margin:0;
-      padding:30px;
-    }
-    h1{
-      text-align:center;
-      margin-bottom:30px;
-    }
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:20px;
-      max-width:1100px;
-      margin:0 auto;
-    }
-    .card{
-      background:#fff;
-      border-radius:12px;
-      overflow:hidden;
-      box-shadow:0 4px 14px rgba(0,0,0,.08);
-    }
-    .card img{
-      width:100%;
-      height:220px;
-      object-fit:cover;
-      display:block;
-      background:#ddd;
-    }
-    .card h3{
-      padding:14px;
-      margin:0;
-      font-size:16px;
-      line-height:1.4;
-    }
-    .msg{
-      max-width:900px;
-      margin:20px auto;
-      background:#fff3cd;
-      color:#7a5b00;
-      border:1px solid #ffe69c;
-      padding:14px;
-      border-radius:10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloka.app - Plataforma de Alquiler de Material Audiovisual</title>
+
+    <meta name="description"
+        content="Aloka: La plataforma de alquiler de material audiovisual entre profesionales. Conecta con otros profesionales y encuentra equipo cerca de ti." />
+    <meta name="author" content="Aloka">
+    <meta name="copyright" content="© 2023 Aloka">
+
+    <meta property="og:title" content="Aloka">
+    <meta property="og:description"
+        content="La plataforma de alquiler de material audiovisual entre profesionales. Conecta con otros profesionales y encuentra equipo cerca de ti.">
+    <meta property="og:url" content="https://www.aloka.app/">
+
+
+    <link data-rh="true" rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <meta name="facebook-domain-verification" content="2zmtsymxdff8rmch2kyintq1weip2k" />
 </head>
+
 <body>
-  <h1>Productos populares de Aloka</h1>
-  <div id="msg" class="msg">Cargando productos...</div>
-  <div class="grid" id="grid"></div>
+    <div id="bgOverlay1" class="bgOverlay">
+        <div id="bgOverlay2" class="bgOverlay"></div>
+    </div>
 
-  <script>
-    fetch('./productos-populares.json')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('No se encontró productos-populares.json');
-        }
-        return response.json();
-      })
-      .then(productos => {
-        const msg = document.getElementById('msg');
-        const grid = document.getElementById('grid');
-
-        if (!Array.isArray(productos) || productos.length === 0) {
-          msg.textContent = 'El JSON está vacío.';
-          return;
-        }
-
-        msg.style.display = 'none';
-
-        grid.innerHTML = productos.map(p => `
-          <div class="card">
-            <img src="${p.imagen}" alt="${p.nombre}" onerror="this.src='https://placehold.co/600x400/png?text=Sin+imagen'">
-            <h3>${p.nombre}</h3>
-          </div>
-        `).join('');
-      })
-      .catch(error => {
-        document.getElementById('msg').textContent = 'Error: ' + error.message;
-      });
-  </script>
+    <main>
+        <img id="logo" alt="Aloka logo" src="images/aloka_logo.png" />
+        <section id="titleSection">
+            <h1>La plataforma de alquiler de material audiovisual entre profesionales</h1>
+            <h2>Conecta con otros profesionales. <br>Encuentra equipo cerca de ti.</h2>
+        </section>
+        <section id="categorySection">
+            <div class="categoryContainer">
+                <img alt="camera_icon" src="images/camera.svg" />
+                <p>Cámaras</p>
+            </div>
+            <div class="categoryContainer">
+                <img alt="camera_icon" src="images/lens.svg" />
+                <p>Lentes</p>
+            </div>
+            <div class="categoryContainer">
+                <img alt="camera_icon" src="images/microphone.svg" />
+                <p>Micrófonos</p>
+            </div>
+            <div class="categoryContainer">
+                <img alt="camera_icon" src="images/bulb.svg" />
+                <p>Iluminación</p>
+            </div>
+            <div class="categoryContainer">
+                <img alt="camera_icon" src="images/tripod.svg" />
+                <p>Mucho más...</p>
+            </div>
+        </section>
+        <section id="formContainer">
+            <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+            <script>
+                hbspt.forms.create({
+                    region: "eu1",
+                    portalId: "142354874",
+                    formId: "48cc8fcc-b364-4c82-b4a3-6e47bae73bff"
+                });
+            </script>
+        </section>
+        <section id="socialSection">
+            <a class="socialBtn" href="https://www.instagram.com/aloka.app/" rel="noopener" target="_blank">
+                <img alt="Instagram" src="images/instagram.svg" />
+            </a>
+            <a class="socialBtn" href="https://www.tiktok.com/@aloka.app" rel="noopener" target="_blank">
+                <img alt="Instagram" src="images/tiktok.svg" />
+            </a>
+        </section>
+        <section id="logos">
+            <img class="logo-img-galdundia" src="images/GAldundia_hor_elebi_neg negro.png" />
+            <img class="logo-img" src="images/plan_recuperacion_transformacion_resiliencia_negro.png" />
+            <img class="logo-img" src="images/EN_Funded_by_the_European_Union_RGB_BLACK_Outline.png" />
+            <img class="logo-img-ministerio" src="images/ministerio_cultura.png" />
+        </section>
+        <section id="logos-mobile">
+            <img class="logo-img-mobile" src="images/GAldundia_hor_elebi_Aldundia_blanco.png" />
+            <img class="logo-img-mobile" src="images/plan_recuperacion_transformacion_resiliencia_blanco.png" />
+            <img class="logo-img-mobile" src="images/EN_Funded_by_the_European_Union_RGB_WHITE.png" />
+            <img class="logo-img-mobile" src="images/ministerio_cultura.png" />
+        </section>
+    </main>
 </body>
 </html>

@@ -1,10 +1,10 @@
 [
   {
-    "nombre": "Producto real 1",
-    "imagen": "https://sharetribe.imgix.net/6644cdce-c443-44fc-a95e-d3abbca7a3b9/68f23a86-a2b8-41da-883d-5c0d47271c3a?auto=format&fit=clip&h=750&w=750&s=f9d52c3fd455c1871c79dd1f38892043"
+    "nombre": "Producto de ejemplo 1",
+    "imagen": "https://placehold.co/600x400/png?text=Producto+1"
   },
   {
-    "nombre": "Producto real 2",
-    "imagen": "https://sharetribe.imgix.net/6644cdce-c443-44fc-a95e-d3abbca7a3b9/68f23a86-a2b8-41da-883d-5c0d47271c3a?auto=format&fit=clip&h=750&w=750&s=f9d52c3fd455c1871c79dd1f38892043"
+    "nombre": "Producto de ejemplo 2",
+    "imagen": "https://placehold.co/600x400/png?text=Producto+2"
   }
 ]

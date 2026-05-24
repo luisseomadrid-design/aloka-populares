@@ -1,0 +1,10 @@
+[
+  {
+    "nombre": "Producto de ejemplo 1",
+    "imagen": "https://placehold.co/600x400/png?text=Producto+1"
+  },
+  {
+    "nombre": "Producto de ejemplo 2",
+    "imagen": "https://placehold.co/600x400/png?text=Producto+2"
+  }
+]

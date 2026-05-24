@@ -1,14 +1,23 @@
 import json
-from datetime import datetime
 
 productos = [
     {
-        "nombre": "Prueba automática " + datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"),
-        "imagen": "https://sharetribe.imgix.net/6644cdce-c443-44fc-a95e-d3abbca7a3b9/68f23a86-a2b8-41da-883d-5c0d47271c3a?auto=format&fit=clip&h=750&w=750&s=f9d52c3fd455c1871c79dd1f38892043"
+        "nombre": "DJI Ronin RS4 Pro",
+        "imagen": "https://placehold.co/600x400/png?text=DJI+Ronin+RS4+Pro"
+    },
+    {
+        "nombre": "Audio-Technica M40x",
+        "imagen": "https://placehold.co/600x400/png?text=Audio-Technica+M40x"
+    },
+    {
+        "nombre": "Tascam Portacapture X8",
+        "imagen": "https://placehold.co/600x400/png?text=Tascam+Portacapture+X8"
+    },
+    {
+        "nombre": "Kit 8x Helios Asteras",
+        "imagen": "https://placehold.co/600x400/png?text=Kit+8x+Helios+Asteras"
     }
 ]
 
 with open("productos-populares.json", "w", encoding="utf-8") as f:
     json.dump(productos, f, ensure_ascii=False, indent=2)
-
-print("productos-populares.json actualizado correctamente")

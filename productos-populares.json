@@ -1,14 +1,34 @@
-[
-  {
-    "nombre": "DJI Ronin RS4 Pro",
-    "imagen": "https://sharetribe.imgix.net/url-distinta-1"
-  },
-  {
-    "nombre": "HOLLYLAND LARK",
-    "imagen": "https://sharetribe.imgix.net/url-distinta-2"
-  },
-  {
-    "nombre": "Audio-Technica M40x",
-    "imagen": "https://sharetribe.imgix.net/url-distinta-3"
-  }
-]
+<script>
+  fetch('./productos-populares.json')
+    .then(function(res) {
+      if (!res.ok) {
+        throw new Error('No se pudo leer productos-populares.json');
+      }
+      return res.json();
+    })
+    .then(function(productos) {
+      var estado = document.getElementById('estado');
+      var grid = document.getElementById('grid');
+
+      if (!Array.isArray(productos) || productos.length === 0) {
+        estado.textContent = 'No hay productos para mostrar.';
+        return;
+      }
+
+      estado.textContent = '';
+
+      var html = '';
+
+      productos.forEach(function(producto) {
+        html += '<div class="card">';
+        html += '<img src="' + String(producto.imagen).trim() + '" alt="' + String(producto.nombre).trim() + '">';
+        html += '<h3>' + String(producto.nombre).trim() + '</h3>';
+        html += '</div>';
+      });
+
+      grid.innerHTML = html;
+    })
+    .catch(function(error) {
+      document.getElementById('estado').textContent = 'Error: ' + error.message;
+    });
+</script>

@@ -61,6 +61,11 @@
   <div id="estado">Cargando productos...</div>
   <div id="grid"></div>
 
+<body>
+  <h1>Productos populares de Aloka</h1>
+  <div id="estado">Cargando productos...</div>
+  <div id="grid"></div>
+
   <script>
     fetch('./productos-populares.json')
       .then(function(res) {
@@ -80,16 +85,21 @@
 
         estado.textContent = '';
 
-        grid.innerHTML = productos.map(function(producto) {
-          return '<div class="card">' +
-                   '<img src="' + producto.imagen + '" alt="' + producto.nombre + '">' +
-                   '<h3>' + producto.nombre + '</h3>' +
-                 '</div>';
-        }).join('');
+        var html = '';
+
+        productos.forEach(function(producto) {
+          html += '<div class="card">';
+          html += '<img src="' + String(producto.imagen).trim() + '" alt="' + String(producto.nombre).trim() + '">';
+          html += '<h3>' + String(producto.nombre).trim() + '</h3>';
+          html += '</div>';
+        });
+
+        grid.innerHTML = html;
       })
       .catch(function(error) {
         document.getElementById('estado').textContent = 'Error: ' + error.message;
       });
   </script>
+</body>
 </body>
 </html>

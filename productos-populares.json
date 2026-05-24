@@ -1,6 +1,14 @@
 [
   {
-    "nombre": "DJI Ronin RS4 Pro",
+    "nombre": "Producto 1",
+    "imagen": "https://sharetribe.imgix.net/..."
+  },
+  {
+    "nombre": "Producto 2",
+    "imagen": "https://sharetribe.imgix.net/..."
+  },
+  {
+    "nombre": "Producto 3",
     "imagen": "https://sharetribe.imgix.net/..."
   }
 ]

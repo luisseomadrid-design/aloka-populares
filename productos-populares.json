@@ -1,10 +1,10 @@
 [
   {
-    "nombre": "Producto de ejemplo 1",
-    "imagen": "https://placehold.co/600x400/png?text=Producto+1"
+    "nombre": "Canon EOS R5",
+    "imagen": "https://placehold.co/600x400/png?text=Canon+EOS+R5"
   },
   {
-    "nombre": "Producto de ejemplo 2",
-    "imagen": "https://placehold.co/600x400/png?text=Producto+2"
+    "nombre": "DJI Ronin RS4 Pro",
+    "imagen": "https://placehold.co/600x400/png?text=DJI+Ronin+RS4+Pro"
   }
 ]

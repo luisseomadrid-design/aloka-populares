@@ -41,26 +41,52 @@
       font-size:16px;
       line-height:1.4;
     }
+    .msg{
+      max-width:900px;
+      margin:20px auto;
+      background:#fff3cd;
+      color:#7a5b00;
+      border:1px solid #ffe69c;
+      padding:14px;
+      border-radius:10px;
+    }
   </style>
 </head>
 <body>
   <h1>Productos populares de Aloka</h1>
+  <div id="msg" class="msg">Cargando productos...</div>
   <div class="grid" id="grid"></div>
 
   <script>
-    fetch('./productos-populares.json')
-      .then(r => r.json())
+    const jsonUrl = './productos-populares.json';
+
+    fetch(jsonUrl)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('No se encontró el JSON: ' + jsonUrl);
+        }
+        return response.json();
+      })
       .then(productos => {
         const grid = document.getElementById('grid');
+        const msg = document.getElementById('msg');
+
+        if (!Array.isArray(productos) || productos.length === 0) {
+          msg.textContent = 'El JSON está vacío o no tiene productos.';
+          return;
+        }
+
+        msg.style.display = 'none';
+
         grid.innerHTML = productos.map(p => `
           <div class="card">
-            <img src="${p.imagen}" alt="${p.nombre}">
+            <img src="${p.imagen}" alt="${p.nombre}" onerror="this.src='https://placehold.co/600x400/png?text=Sin+imagen'">
             <h3>${p.nombre}</h3>
           </div>
         `).join('');
       })
-      .catch(() => {
-        document.getElementById('grid').innerHTML = '<p>No se pudieron cargar los productos.</p>';
+      .catch(error => {
+        document.getElementById('msg').textContent = 'Error: ' + error.message;
       });
   </script>
 </body>

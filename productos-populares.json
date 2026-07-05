@@ -1,14 +1,10 @@
 [
   {
-    "nombre": "Neewer 660 LED",
+    "nombre": "Manfrotto Tripod",
     "imagen": "https://sharetribe.imgix.net/6644cdce-c443-44fc-a95e-d3abbca7a3b9/68f23a86-a2b8-41da-883d-5c0d47271c3a?auto=format&fit=clip&h=750&w=750&s=f9d52c3fd455c1871c79dd1f38892043"
   },
   {
-    "nombre": "DJI Ronin RS4 Pro",
-    "imagen": "https://sharetribe.imgix.net/6644cdce-c443-44fc-a95e-d3abbca7a3b9/68f23a86-a2b8-41da-883d-5c0d47271c3a?auto=format&fit=clip&h=750&w=750&s=f9d52c3fd455c1871c79dd1f38892043"
-  },
-  {
-    "nombre": "Audio-Technica M40x",
+    "nombre": "Rode Wireless GO II",
     "imagen": "https://sharetribe.imgix.net/6644cdce-c443-44fc-a95e-d3abbca7a3b9/68f23a86-a2b8-41da-883d-5c0d47271c3a?auto=format&fit=clip&h=750&w=750&s=f9d52c3fd455c1871c79dd1f38892043"
   },
   {
@@ -16,11 +12,11 @@
     "imagen": "https://sharetribe.imgix.net/6644cdce-c443-44fc-a95e-d3abbca7a3b9/68f23a86-a2b8-41da-883d-5c0d47271c3a?auto=format&fit=clip&h=750&w=750&s=f9d52c3fd455c1871c79dd1f38892043"
   },
   {
-    "nombre": "Manfrotto Tripod",
+    "nombre": "Audio-Technica M40x",
     "imagen": "https://sharetribe.imgix.net/6644cdce-c443-44fc-a95e-d3abbca7a3b9/68f23a86-a2b8-41da-883d-5c0d47271c3a?auto=format&fit=clip&h=750&w=750&s=f9d52c3fd455c1871c79dd1f38892043"
   },
   {
-    "nombre": "HOLLYLAND LARK",
+    "nombre": "DJI Ronin RS4 Pro",
     "imagen": "https://sharetribe.imgix.net/6644cdce-c443-44fc-a95e-d3abbca7a3b9/68f23a86-a2b8-41da-883d-5c0d47271c3a?auto=format&fit=clip&h=750&w=750&s=f9d52c3fd455c1871c79dd1f38892043"
   },
   {
@@ -28,7 +24,11 @@
     "imagen": "https://sharetribe.imgix.net/6644cdce-c443-44fc-a95e-d3abbca7a3b9/68f23a86-a2b8-41da-883d-5c0d47271c3a?auto=format&fit=clip&h=750&w=750&s=f9d52c3fd455c1871c79dd1f38892043"
   },
   {
-    "nombre": "Sony FX3",
+    "nombre": "HOLLYLAND LARK",
+    "imagen": "https://sharetribe.imgix.net/6644cdce-c443-44fc-a95e-d3abbca7a3b9/68f23a86-a2b8-41da-883d-5c0d47271c3a?auto=format&fit=clip&h=750&w=750&s=f9d52c3fd455c1871c79dd1f38892043"
+  },
+  {
+    "nombre": "Canon EOS R5",
     "imagen": "https://sharetribe.imgix.net/6644cdce-c443-44fc-a95e-d3abbca7a3b9/68f23a86-a2b8-41da-883d-5c0d47271c3a?auto=format&fit=clip&h=750&w=750&s=f9d52c3fd455c1871c79dd1f38892043"
   }
 ]
